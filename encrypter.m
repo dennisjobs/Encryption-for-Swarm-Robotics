@@ -1,0 +1,8 @@
+function value_enc = encrypter(value,e,N)
+
+value_enc = zeros(1,length(value));
+for k = 1:length(value)
+    value_enc(k) = powermod(value(k),e,N);
+end
+
+end
